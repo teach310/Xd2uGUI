@@ -217,7 +217,12 @@ xda is json format like this.
 # How to use
 
 ## Export artboard as xda in AdobeXD
-I will write later
+
+![icon](https://user-images.githubusercontent.com/16421323/51436369-04738b80-1ccf-11e9-96d8-ec786017013f.png)
+
+![2019-01-20 16 14 58](https://user-images.githubusercontent.com/16421323/51436364-f0c82500-1cce-11e9-9582-e672ff2861a4.jpg)
+
+I will write detail later
 
 ## Import xda
 only import xda file.
