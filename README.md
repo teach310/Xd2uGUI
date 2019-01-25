@@ -227,3 +227,6 @@ I will write detail later
 ## Import xda
 only import xda file.
 you can see prefab next to xda
+
+# License
+This library is under the MIT License.
