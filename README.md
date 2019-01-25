@@ -216,6 +216,34 @@ xda is json format like this.
 
 # How to use
 
+## Download AdobeXD Plugin
+
+[XDAExporter1_0_0](https://www.dropbox.com/s/jg4iqvwb8iymn6x/XDAExporter1_0_0.xdx?dl=0)
+
+Download from link and install then you can use XDAExporter in Adobe XD.
+currently this plugin has bug.
+
+```
+// Completed
+Artboard
+Rectangle
+Text
+Group
+
+// Progress
+Ellipse
+Line
+Path
+BooleanGroup
+SymbolInstance
+RepeatGrid
+LinkedGraphic
+```
+
+If there is any progress node in your artboard, this plugin will crash.
+I will fix and release.
+And I will create new remort repository to publish xda_exporter src after fix.
+
 ## Export artboard as xda in AdobeXD
 
 ![icon](https://user-images.githubusercontent.com/16421323/51436369-04738b80-1ccf-11e9-96d8-ec786017013f.png)
