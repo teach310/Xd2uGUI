@@ -242,7 +242,9 @@ LinkedGraphic
 
 If there is any progress node in your artboard, this plugin will crash.
 I will fix and release.
-And I will create new remort repository to publish xda_exporter src after fix.
+
+I'm developing here.
+https://github.com/teach310/xda_exporter/tree/master
 
 ## Export artboard as xda in AdobeXD
 
