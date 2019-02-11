@@ -11,6 +11,11 @@ namespace Xd2uGUI {
             IXdRectangleTranslater rectangleTranslater = new DefaultXdRectangleTranslater();
             IXdTextTranslater textTranslater = new DefaultXdTextTranslater();
             IXdGroupTranslater groupTranslater = new DefaultXdGroupTranslater();
+            IXdEllipseTranslater ellipseTranslater = new DefaultXdEllipseTranslater();
+            IXdLineTranslater lineTranslater = new DefaultXdLineTranslater();
+            IXdPathTranslater pathTranslater = new DefaultXdPathTranslater();
+            IXdSymbolInstanceTranslater symbolInstanceTranslater = new DefaultXdSymbolInstanceTranslater();
+            IXdLinkedGraphicTranslater linkedGraphicTranslater = new DefaultXdLinkedGraphicTranslater();
 
              // アートボード
             GameObject artboard = artboardTranslater.CreateGameObjectByArtboard(xda.artboard);
@@ -43,6 +48,51 @@ namespace Xd2uGUI {
                 nodeTree.Add (node, node.parentGuid);
                 siblingIndexMap.Add(node, node.siblingIndex);
                 var go = groupTranslater.CreateGameObjectByGroup (xda.groupList[i], artboard);
+                goMap.Add (node.guid, go);
+            }
+
+            // Ellipse
+            for (int i = 0; i < xda.ellipseList.Count; i++) {
+                var node = xda.ellipseList[i];
+                nodeTree.Add (node, node.parentGuid);
+                siblingIndexMap.Add(node, node.siblingIndex);
+                var go = ellipseTranslater.CreateGameObjectByEllipse (xda.ellipseList[i], artboard);
+                goMap.Add (node.guid, go);
+            }
+
+            // Line
+            for (int i = 0; i < xda.lineList.Count; i++) {
+                var node = xda.lineList[i];
+                nodeTree.Add (node, node.parentGuid);
+                siblingIndexMap.Add(node, node.siblingIndex);
+                var go = lineTranslater.CreateGameObjectByLine (xda.lineList[i], artboard);
+                goMap.Add (node.guid, go);
+            }
+
+            // Path
+             for (int i = 0; i < xda.pathList.Count; i++) {
+                var node = xda.pathList[i];
+                nodeTree.Add (node, node.parentGuid);
+                siblingIndexMap.Add(node, node.siblingIndex);
+                var go = pathTranslater.CreateGameObjectByPath (xda.pathList[i], artboard);
+                goMap.Add (node.guid, go);
+            }
+
+            // SymbolInstance
+            for (int i = 0; i < xda.symbolInstanceList.Count; i++) {
+                var node = xda.symbolInstanceList[i];
+                nodeTree.Add (node, node.parentGuid);
+                siblingIndexMap.Add(node, node.siblingIndex);
+                var go = symbolInstanceTranslater.CreateGameObjectBySymbolInstance (xda.symbolInstanceList[i], artboard);
+                goMap.Add (node.guid, go);
+            }
+
+            // LinkedGraphic
+            for (int i = 0; i < xda.linkedGraphicList.Count; i++) {
+                var node = xda.linkedGraphicList[i];
+                nodeTree.Add (node, node.parentGuid);
+                siblingIndexMap.Add(node, node.siblingIndex);
+                var go = linkedGraphicTranslater.CreateGameObjectByLinkedGraphic (xda.linkedGraphicList[i], artboard);
                 goMap.Add (node.guid, go);
             }
 

@@ -23,4 +23,29 @@ namespace Xd2uGUI
     {
         GameObject CreateGameObjectByGroup(XdGroup xdGroup, GameObject artboard);
     }
+
+    interface IXdEllipseTranslater
+    {
+        GameObject CreateGameObjectByEllipse(XdEllipse xdEllipse, GameObject artboard);
+    }
+
+    interface IXdLineTranslater
+    {
+        GameObject CreateGameObjectByLine(XdLine xdLine, GameObject artboard);
+    }
+
+    interface IXdPathTranslater
+    {
+        GameObject CreateGameObjectByPath(XdPath xdLinxdPath, GameObject artboard);
+    }
+
+    interface IXdSymbolInstanceTranslater
+    {
+        GameObject CreateGameObjectBySymbolInstance(XdSymbolInstance xdSymbolInstance, GameObject artboard);
+    }
+
+    interface IXdLinkedGraphicTranslater
+    {
+        GameObject CreateGameObjectByLinkedGraphic(XdLinkedGraphic xdLinkedGraphic, GameObject artboard);
+    }
 }

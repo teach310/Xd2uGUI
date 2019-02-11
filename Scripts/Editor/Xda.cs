@@ -8,7 +8,12 @@ namespace Xd2uGUI {
         Artboard,
         Rectangle,
         Text,
-        Group
+        Group,
+        Ellipse,
+        Line,
+        Path,
+        SymbolInstance,
+        LinkedGraphic
     }
 
     [System.Serializable]
@@ -17,6 +22,11 @@ namespace Xd2uGUI {
         public List<XdRectangle> rectangleList;
         public List<XdText> textList;
         public List<XdGroup> groupList;
+        public List<XdEllipse> ellipseList;
+        public List<XdLine> lineList;
+        public List<XdPath> pathList;
+        public List<XdSymbolInstance> symbolInstanceList;
+        public List<XdLinkedGraphic> linkedGraphicList;
     }
 
     [System.Serializable]
@@ -33,6 +43,16 @@ namespace Xd2uGUI {
                     return XdComponent.Rectangle;
                 case "Text":
                     return XdComponent.Text;
+                case "Ellipse":
+                    return XdComponent.Ellipse;
+                case "Line":
+                    return XdComponent.Line;
+                case "Path":
+                    return XdComponent.Path;
+                case "SymbolInstance":
+                    return XdComponent.SymbolInstance;
+                case "LinkedGraphic":
+                    return XdComponent.LinkedGraphic;
                 case "Group":
                 default:
                     return XdComponent.Group;
@@ -77,5 +97,66 @@ namespace Xd2uGUI {
         public int siblingIndex;
         public float artboardPosX;
         public float artboardPosY;
+    }
+
+    [System.Serializable]
+    public class XdEllipse : Node{
+        public string parentGuid;
+        public int siblingIndex;
+        public float artboardPosX;
+        public float artboardPosY;
+        public int width;
+        public int height;
+        public string color;
+        public float radiusX;
+        public float radiusY;
+    }
+
+    [System.Serializable]
+    public class XdLine : Node{
+        public string parentGuid;
+        public int siblingIndex;
+        public float artboardPosX;
+        public float artboardPosY;
+        public int width;
+        public int height;
+        public string color;
+        public float lineWidth;
+        public float startPosX;
+        public float startPosY;
+        public float endPosX;
+        public float endPosY;
     }    
+
+    [System.Serializable]
+    public class XdPath : Node{
+        public string parentGuid;
+        public int siblingIndex;
+        public float artboardPosX;
+        public float artboardPosY;
+        public int width;
+        public int height;
+        public string color;
+        public string pathData;
+    }
+
+    [System.Serializable]
+    public class XdSymbolInstance : Node{
+        public string parentGuid;
+        public int siblingIndex;
+        public float artboardPosX;
+        public float artboardPosY;
+        public int width;
+        public int height;
+    }
+
+    [System.Serializable]
+    public class XdLinkedGraphic : Node{
+        public string parentGuid;
+        public int siblingIndex;
+        public float artboardPosX;
+        public float artboardPosY;
+        public int width;
+        public int height;
+    }
 }
