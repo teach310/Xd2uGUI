@@ -20,18 +20,6 @@
 			"color": "#fcfaf2"
 		},
 		{
-			"guid": "b1da4c69-07d8-4307-8ce4-4b5747b250df",
-			"component": "Rectangle",
-			"name": "dog",
-			"parentGuid": "7f3c0811-2209-466b-a600-cff1b2b48a32",
-			"siblingIndex": 1,
-			"artboardPosX": 290,
-			"artboardPosY": 50,
-			"width": 87,
-			"height": 91,
-			"color": "#FFF"
-		},
-		{
 			"guid": "99545c77-3746-4997-9a9f-2d5189485e9d",
 			"component": "Rectangle",
 			"name": "長方形 4",
@@ -102,6 +90,18 @@
 			"width": 312,
 			"height": 36,
 			"color": "#262525"
+		},
+		{
+			"guid": "b4a670c3-f8f5-4614-93b0-bc19e87a6252",
+			"component": "Rectangle",
+			"name": "butachan",
+			"parentGuid": "7f3c0811-2209-466b-a600-cff1b2b48a32",
+			"siblingIndex": 4,
+			"artboardPosX": 10,
+			"artboardPosY": 160,
+			"width": 207,
+			"height": 179,
+			"color": "#FFF"
 		}
 	],
 	"groupList": [
@@ -110,7 +110,7 @@
 			"component": "Group",
 			"name": "frame",
 			"parentGuid": "7f3c0811-2209-466b-a600-cff1b2b48a32",
-			"siblingIndex": 2,
+			"siblingIndex": 1,
 			"artboardPosX": 0,
 			"artboardPosY": 0
 		},
@@ -119,7 +119,7 @@
 			"component": "Group",
 			"name": "title",
 			"parentGuid": "7f3c0811-2209-466b-a600-cff1b2b48a32",
-			"siblingIndex": 4,
+			"siblingIndex": 3,
 			"artboardPosX": 113,
 			"artboardPosY": 132
 		}
@@ -130,7 +130,7 @@
 			"component": "Text",
 			"name": "2",
 			"parentGuid": "7f3c0811-2209-466b-a600-cff1b2b48a32",
-			"siblingIndex": 3,
+			"siblingIndex": 2,
 			"artboardPosX": 298,
 			"artboardPosY": 132,
 			"text": "2",
