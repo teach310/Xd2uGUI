@@ -34,5 +34,10 @@ then it will attach to Image automatically if node name match to image name.
 only import xda file.
 prefab will generate and you can see prefab next to xda
 
+# Article
+
+Japanese 日本語記事
+https://qiita.com/Teach/items/b2cff078215c064acf1e
+
 # License
 This library is under the MIT License.
