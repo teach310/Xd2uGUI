@@ -3,6 +3,10 @@ Generate Unity Prefab from AdobeXD artboard
 
 ![2019-02-13 21 47 09](https://user-images.githubusercontent.com/16421323/52712885-4a272980-2fd9-11e9-99e6-edbd199bb641.jpg)
 
+# Supported Unity Version
+
+Unity 2018.3 ~
+.Net 4.x ~
 
 # about xda
 https://github.com/teach310/xda_exporter
