@@ -36,7 +36,7 @@ prefab will generate and you can see prefab next to xda
 
 # Article
 
-Japanese 日本語記事
+Japanese 日本語記事  
 https://qiita.com/Teach/items/b2cff078215c064acf1e
 
 # License
